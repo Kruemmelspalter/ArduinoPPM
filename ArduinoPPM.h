@@ -9,7 +9,7 @@ class ArduinoPPM{
     void send(int values[]);
     private:
     int _pin;
-    int _bool;
+    int _debug;
 };
 
 #endif
