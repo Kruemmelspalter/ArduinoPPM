@@ -1,7 +1,7 @@
 # ArduinoPPM
  A library for Arduino to send PPM
 
- Instantiation: `c++ ArduinoPPM ppm(/*values*/,/*pin*/);`
+ Instantiation: ```c++ ArduinoPPM ppm(/*values*/,/*pin*/); ```
 
  Example:
  ```c++
