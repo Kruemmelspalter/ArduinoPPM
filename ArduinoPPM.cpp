@@ -10,17 +10,17 @@ void ArduinoPPM::send(int values[]){
         int value=values[i];
         digitalWrite(_pin, LOW);
         #ifdef debug
-            Serial.out.println(0);
+            Serial.print(0);
         #endif
         delayMicroseconds(400);
         digitalWrite(_pin, HIGH);
         #ifdef debug
-            Serial.out.println(1);
+            Serial.print(1);
         #endif
         delayMicroseconds(value);
     }
     #ifdef debug
-        Serial.out.println("Wait");
+        Serial.print("Wait");
     #endif
     delayMicroseconds(12100);
 }

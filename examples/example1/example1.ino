@@ -1,4 +1,8 @@
+#define debug
+
 #include <ArduinoPPM.h>
+
+
 
 ArduinoPPM ppm(13);
 
