@@ -6,7 +6,7 @@ ArduinoPPM::ArduinoPPM(int pin){
     _pin = pin;
 }
 void ArduinoPPM::send(int values[]){
-    for(int i=0;i<values.length;i++){
+    for(int i=0;i<sizeof(values);i++){
         int value=values[i];
         digitalWrite(_pin, LOW);
         delayMicroseconds(400);

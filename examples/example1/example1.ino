@@ -1,6 +1,6 @@
 #include <ArduinoPPM.h>
 
-ArduinoPPM ppm(6,13);
+ArduinoPPM ppm(13);
 
 void setup() {
   
