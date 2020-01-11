@@ -3,9 +3,9 @@
 
 #include "Arduino.h"
 
-class ArduinoPPM(int count, int pin){
+class ArduinoPPM{
     public:
-    ArduinoPPM(int count);
+    ArduinoPPM(int count, int pin);
     void send(int values[count]);
     private:
     int _pin;
