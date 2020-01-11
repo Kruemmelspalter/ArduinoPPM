@@ -1,18 +1,26 @@
 #include "Arduino.h"
 #include "ArduinoPPM.h"
 
-ArduinoPPM::ArduinoPPM(int count, int pin){
+ArduinoPPM::ArduinoPPM(int pin){
     pinMode(pin, OUTPUT);
     _pin = pin;
-    _count = count;
 }
-void ArduinoPPM::send(int values[_count]){
-    for(int i=0;i<_count;i++){
+void ArduinoPPM::send(int values[]){
+    for(int i=0;i<sizeof(values);i++){
         int value=values[i];
         digitalWrite(_pin, LOW);
+        #ifdef debug
+            Serial.out.println(0);
+        #endif
         delayMicroseconds(400);
         digitalWrite(_pin, HIGH);
+        #ifdef debug
+            Serial.out.println(1);
+        #endif
         delayMicroseconds(value);
     }
+    #ifdef debug
+        Serial.out.println("Wait");
+    #endif
     delayMicroseconds(12100);
 }

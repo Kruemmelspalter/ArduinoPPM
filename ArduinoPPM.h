@@ -3,13 +3,12 @@
 
 #include "Arduino.h"
 
-class ArduinoPPM(int count, int pin){
+class ArduinoPPM{
     public:
-    ArduinoPPM(int count);
-    void send(int values[count]);
+    ArduinoPPM(int pin);
+    void send(int values[]);
     private:
     int _pin;
-    int _count;
 };
 
 #endif
