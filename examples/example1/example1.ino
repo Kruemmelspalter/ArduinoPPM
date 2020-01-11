@@ -4,7 +4,7 @@
 
 
 
-ArduinoPPM ppm(13);
+ArduinoPPM ppm(13, true);//debug on
 
 void setup() {
   
