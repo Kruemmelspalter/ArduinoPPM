@@ -7,5 +7,6 @@ void setup() {
 }
 
 void loop() {
-  ppm.send({1.1,1.1,1.6,1.1,1.1,1.1,1.1});
+  int values[]={1100,1100,1600,1100,1100,1100,1100};
+  ppm.send(values);
 }

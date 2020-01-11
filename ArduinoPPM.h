@@ -5,11 +5,10 @@
 
 class ArduinoPPM{
     public:
-    ArduinoPPM(int count, int pin);
-    void send(int values[count]);
+    ArduinoPPM(int pin);
+    void send(int values[]);
     private:
     int _pin;
-    int _count;
 };
 
 #endif
